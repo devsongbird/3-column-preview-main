@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, 
+button {
+    font-family: "Lexend Deca", sans-serif;
+}
+h3 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-weight: 20px;
+    }
+p {
+    font-size: 15px;
+    line-height: 1.9;
+    font-weight: 200;
+}
+.btn {
+    margin-top: 70px;
+    background-color: white;
+    border: 0.8px solid rgb(63, 49, 49);
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-weight: 200;
+}
+
+.container, .card {
+    padding: 30px;
+}
+.Gold {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+.Gold .btn {
+    color: hsl(31, 77%, 52%);
+}
+.Cyan {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+.Cyan .btn {
+    color: hsl(184, 100%, 22%);
+}
+.Green {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+.Green .btn {
+    color: hsl(179, 100%, 13%);
+}
+.btn:hover {
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1.5px solid white;
+}
+.attribution { 
+    font-size: 8px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+@media (min-width: 700px) {
+    .container {
+        display: flex;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 100px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    .card {
+        flex: 1;
+        padding: 40px 20px;
+        border-radius: 0px;
+    }
+    .card:not(:last-child) {
+        border-right: 1.5px solid white;
+    }
+    .Gold {
+        border-radius: 10px 0px 0px 10px;
+    }
+    .Green {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
